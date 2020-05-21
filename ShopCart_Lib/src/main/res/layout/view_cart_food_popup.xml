@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/cart_top_container_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42.18dp"
+        android:background="#f6f6f6">
+        <!--android:layout_above="@id/cart_recycler_view"-->
+
+        <View
+            android:id="@+id/cart_title_leftsplit"
+            android:layout_width="2.18dp"
+            android:layout_height="17.82dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.82dp"
+            android:background="#3190E8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.09dp"
+            android:layout_toRightOf="@id/cart_title_leftsplit"
+            android:text="购物车"
+            android:textColor="#333"
+            android:textSize="16.73sp"/>
+
+        <!-- 清空购物车 -->
+        <RelativeLayout
+            android:id="@+id/cart_clear_container_rl"
+            android:layout_width="145.45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/car_popup_tv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21.82dp"
+                android:text="清空购物车"
+                android:textColor="#999999"
+                android:textSize="14.55dp"/>
+
+            <ImageView
+                android:layout_width="14.55dp"
+                android:layout_height="14.55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.91dp"
+                android:layout_toLeftOf="@id/car_popup_tv_clear"
+                android:src="@drawable/clean_car"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:overScrollMode="never"/>
+
+    <RelativeLayout
+        android:id="@+id/cart_bottom_container_rl"
+        android:layout_width="match_parent"
+        android:layout_height="32.18dp"
+        android:background="#f6f6f6"
+        tools:visibility="invisible">
+        <!--android:layout_below="@id/cart_recycler_view"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/more_arrow"
+            android:gravity="center"
+            android:text="商品如需分开打包，请使用多人订餐"
+            android:textColor="#999999"
+            android:textSize="12.55dp"/>
+
+    </RelativeLayout>
+
+
+</merge>

@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- 分割线高度 -->
+    <dimen name="split_height">0.36dp</dimen>
+    <dimen name="cart_bottom_height">50.91dp</dimen>
+    <dimen name="cart_icon_size">60dp</dimen>
+
+    <!-- 购物车动画小球的宽/高 -->
+    <dimen name="ball_size">10.91dp</dimen>
+
+</resources>

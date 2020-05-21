@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="61.82dp"
+    android:background="@android:color/transparent">
+
+    <com.konomi.shopcart_lib.widget.cart.AnimShopButton
+        android:id="@+id/item_cart_popup_add_subsctact_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        app:addEnableBgColor="#3190E8"
+        app:addEnableFgColor="#ffffff"
+        app:hintBgColor="#3190E8"
+        app:hintBgRoundValue="15dp"
+        app:hintFgColor="#ffffff"
+        app:ignoreHintArea="true"
+        app:maxCount="1000000"
+        app:perAnimDuration="350"/>
+
+    <TextView
+        android:id="@+id/item_cart_popup_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_cart_popup_add_subsctact_btn"
+        android:layout_marginRight="5.82dp"
+        android:layout_toLeftOf="@id/item_cart_popup_add_subsctact_btn"
+        android:textColor="#f2711c"
+        android:textSize="17.82sp"
+        tools:text="¥3"/>
+
+    <!--<View
+        android:id="@+id/item_cart_popup_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="21.82dp"
+        android:background="@color/split_color"
+        android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/item_cart_popup_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21.82dp"
+        android:textColor="#777"
+        android:textSize="16.73sp"
+        tools:text="炒肉"/>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:id="@+id/main_root_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ui.MainActivity">
+
+    <!-- RecyclerView使用weight权重的时候, 会导致
+     多次测量, 布局, 没法复用ViewHolder, 一次性就new出
+     所有的ViewHolder还不满足...42条数据new了74个左右的ViewHolder-->
+
+    <com.konomi.elemedemo.widget.TypeRecyclerView
+        android:id="@+id/typeRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/cart_bottom_height"
+        android:background="@color/type_gray"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layout_widthPercent="20%"/>
+
+
+    <com.konomi.elemedemo.widget.GoodRecyclerView
+        android:id="@+id/goodRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/cart_bottom_height"
+        android:layout_toRightOf="@id/typeRecyclerView"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:overScrollMode="never"/>
+
+
+    <com.konomi.shopcart_lib.widget.cart.CartFoodPopupView
+        android:id="@+id/cartPopView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/cart_bottom_height"
+        android:background="#90000000"
+        app:cart_animate_time="500"/>
+
+    <!-- 底部购物车的部分 -->
+    <include
+        layout="@layout/view_bottom_cart"/>
+
+
+</android.support.percent.PercentRelativeLayout>

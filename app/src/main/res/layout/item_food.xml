@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="@drawable/ripple_bg">
+
+    <ImageView
+            android:id="@+id/item_good_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/food0" />
+
+    <!-- 分割线 -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="#F5F5F5" />
+
+    <TextView
+            android:id="@+id/item_good_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/item_good_iv"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            tools:text="小猪包套餐" />
+
+    <TextView
+            android:id="@+id/item_goods_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_good_title"
+            android:layout_alignLeft="@id/item_good_title"
+            android:layout_marginTop="1dp"
+            android:text="小猪包1个+豆浆1个+鲜肉包1个"
+            android:textColor="#BCBCBC"
+            android:textSize="12sp" />
+
+    <TextView
+            android:id="@+id/item_good_sale_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_goods_detail_tv"
+            android:layout_alignLeft="@id/item_good_title"
+            android:text="月销780份"
+            android:textColor="#828282"
+            android:textSize="12sp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_goods_detail_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_good_sale_tv"
+            android:text="买过2次"
+            android:textColor="#828282"
+            android:textSize="12sp" />
+
+    <TextView
+            android:id="@+id/item_good_discount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/item_good_sale_tv"
+            android:layout_alignLeft="@id/item_good_title"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/red_rectangle_left_8"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="4折"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/item_good_sale_tv"
+            android:layout_alignTop="@id/item_good_discount_tv"
+            android:layout_toRightOf="@id/item_good_discount_tv"
+            android:background="@drawable/pink_rectangle_right_8"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="会员专享"
+            android:textColor="#F45A5A"
+            android:textSize="10sp" />
+
+    <TextView
+            android:id="@+id/item_good_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_good_discount_tv"
+            android:layout_alignLeft="@id/item_good_title"
+            android:layout_marginTop="3dp"
+            android:textColor="#C7A89A"
+            android:textSize="14sp"
+            tools:text="￥7.00" />
+
+
+    <!--放在加的图标前面-->
+
+    <com.konomi.shopcart_lib.widget.cart.AnimShopButton
+            android:id="@+id/item_business_asb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_good_price_tv"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            app:addEnableBgColor="#3190E8"
+            app:addEnableFgColor="#ffffff"
+            app:hintBgColor="#3190E8"
+            app:hintBgRoundValue="15dp"
+            app:hintFgColor="#ffffff"
+            app:maxCount="2147483647" />
+
+</RelativeLayout>

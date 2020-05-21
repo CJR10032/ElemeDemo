@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 分割线颜色 -->
+    <color name="split_color">#cccccc</color>
+
+    <color name="color_20percent_black">#33000000</color>
+
+    <!-- 提交订单的背景色 -->
+    <color name="order_submit_empty_bg">#535353</color>
+    <color name="order_submit_full_bg">#59d178</color>
+
+    <color name="type_gray">#f8f8f8</color>
+    <color name="type_normal">#6b6b6b</color>
+    <color name="type_checked">#535353</color>
+
+    <color name="dividerColor">#BDBDBD</color>
+
+</resources>

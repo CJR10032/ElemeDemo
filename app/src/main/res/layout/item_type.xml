@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/item_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/type_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/type_normal"
+        android:textSize="13sp"
+        tools:text="种类1"/>
+
+    <TextView
+        android:id="@+id/item_badge_tv"
+        style="@style/badge_style"
+        android:layout_gravity="right"
+        android:layout_margin="2dp"
+        android:text="1"
+        tools:visibility="visible"/>
+
+</FrameLayout>
