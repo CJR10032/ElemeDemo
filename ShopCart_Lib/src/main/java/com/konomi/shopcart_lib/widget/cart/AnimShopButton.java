@@ -999,10 +999,9 @@ public class AnimShopButton extends View {
     protected void onDelClick() {
         if (mCount > 0) {
             mCount--;
+            onCountDelSuccess();
             if (null != mOnAddDelListener) {
                 mOnAddDelListener.onDelClick(mCount);
-            } else {
-                onCountDelSuccess();
             }
         } else {
             if (null != mOnAddDelListener) {
@@ -1015,10 +1014,9 @@ public class AnimShopButton extends View {
     protected void onAddClick() {
         if (mCount < mMaxCount) {
             mCount++;
+            onCountAddSuccess();
             if (null != mOnAddDelListener) {
                 mOnAddDelListener.onAddClick(mCount);
-            } else {
-                onCountAddSuccess();
             }
         } else {
             if (null != mOnAddDelListener) {
